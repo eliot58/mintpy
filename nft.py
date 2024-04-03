@@ -16,14 +16,14 @@ async def deploy_items():
 
     for _ in range(200):
         contents.append(
-            ("1.json", Address("0QBsqOeWeZbiaLgLy3-qZ5jY9_ZyIY2VC_w_a9eR0gTg7N18"))
+            ("1.json", Address("EQBXUKaU7jOQQiCoU_AioosUs_L1hOv4UAxPw4kMyeMxDncO"))
         )
     
     split_contents = [contents[i:i+4] for i in range(0, len(contents), 4)]
 
     recipes = []
 
-    index = 1000
+    index = 4
 
     for content in split_contents:
         body = create_batch_nft_mint(index, content)

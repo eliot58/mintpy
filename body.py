@@ -12,10 +12,10 @@ def create_collection():
         code=code,
         royalty_base=royalty_base,
         royalty=royalty_factor,
-        royalty_address=Address('EQBcJ0nCBGbNPJ-7kB8jAAoKNagW2kI-jQ1uypBPsche34KE'),
-        owner_address=Address('EQBcJ0nCBGbNPJ-7kB8jAAoKNagW2kI-jQ1uypBPsche34KE'),
-        collection_content_uri='https://s.getgems.io/nft/b/c/62fba50217c3fe3cbaad9e7f/meta.json',
-        nft_item_content_base_uri='https://ipfs.io/ipfs/QmP5ctrH4ZndkofykJkkHyVPRHPf27nLheNrGu2QN8r5vg/',
+        royalty_address=Address('EQAohvOuUX2u_UKGhROWqtrwtn7xN9oP9Sd2cNB-cBr6RssA'),
+        owner_address=Address('EQAohvOuUX2u_UKGhROWqtrwtn7xN9oP9Sd2cNB-cBr6RssA'),
+        collection_content_uri='https://cyan-indirect-ant-156.mypinata.cloud/ipfs/QmSTwUT5vye9pTPAzeQZpGHnpfLoZDwAJQ1TVCvhBJJ4Yg/meta.json',
+        nft_item_content_base_uri='https://cyan-indirect-ant-156.mypinata.cloud/ipfs/QmVXXrAnQFKtCAwPHoHJoxGnRh7zsXnqvcWy5bkkB8UdEM/',
         nft_item_code_hex=NFTItem.code)
 
     return collection

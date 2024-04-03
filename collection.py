@@ -16,7 +16,7 @@ async def deploy_collection():
     recipes = [
         {
             'address': collection.address.to_string(),
-            'amount': to_nano(0.05, 'ton'),
+            'amount': to_nano(0.2, 'ton'),
             'state_init': state_init,
             'send_mode': 3
         }
@@ -40,7 +40,7 @@ async def change_owner(new_owner_address):
         {
             'address': collection.address.to_string(),
             'amount': to_nano(0.05, 'ton'),
-            'payload': collection.create_change_owner_body(new_owner_address),
+            'payload': collection.create_change_owner_body(Address(new_owner_address)),
             'send_mode': 3
         }
     ]
@@ -90,4 +90,4 @@ async def edit_collection():
 
 
 if __name__ == '__main__':
-    asyncio.get_event_loop().run_until_complete(edit_collection())
+    asyncio.get_event_loop().run_until_complete(deploy_collection())
